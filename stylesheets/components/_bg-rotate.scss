@@ -1,0 +1,8 @@
+.bg-rotate{
+	background: $primary-light;
+	transform: rotate(-7deg);
+	margin: 0 -200px;
+	.bg-rotate-fix{
+		transform: rotate(7deg);
+	}
+}

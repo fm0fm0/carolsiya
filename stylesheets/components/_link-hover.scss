@@ -1,0 +1,7 @@
+//自訂連結文字效果
+.link-hover{
+	transition: .6s ease;
+	&:hover{
+		color: $primary-dark;
+	}
+}

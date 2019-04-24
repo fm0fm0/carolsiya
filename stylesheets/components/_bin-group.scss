@@ -1,0 +1,105 @@
+.bin-group-wrap{
+	background-color: $primary-light;
+	z-index: -5;
+	height: 180px;
+	margin: 100px 0;
+	@include media-breakpoint-down(sm){
+		height: 320px;
+		margin: 20px 0 50px;
+	}
+}
+.bin-group{
+	margin-top: -65px;
+	@include media-breakpoint-down(md){
+		margin-top: -30px;
+	}
+	@include media-breakpoint-down(sm){
+		margin-top: 20px;
+	}
+}
+.bin-wrap{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 310px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+	transition: .6s ease;
+	@include media-breakpoint-down(md){
+		height: 240px;
+	}
+	@include media-breakpoint-down(sm){
+		height: 80px;
+	}
+	.bin-title{
+		z-index: 1;
+		color: darken($secondary, 30%);
+		transition: .6s ease;
+		font-size: 36px;
+		@include media-breakpoint-down(md){
+			font-size: 30px;
+		}	
+		@include media-breakpoint-down(sm){
+			font-size: 20px;
+		}		
+	}
+	.bin-top{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background: url('../images/decorative_border_md.svg') no-repeat;
+		background-position: center center;
+		@include media-breakpoint-down(md){
+			background-size: contain;
+		}	
+		@include media-breakpoint-down(sm){
+			background: url('../images/decorative_border_sm.svg') no-repeat;
+			background-position: center center;
+		}
+	}
+	.bin-cover{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($primary, .6);
+		z-index: -2;
+		transition: .6s ease;
+	}
+	.bin-img{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -3;
+	}
+	.bin-img-prepend{
+		background: url('../images/product-01.png') no-repeat;
+		@include bg-cover();
+	}
+	.bin-img-center{
+		background: url('../images/product-02.png') no-repeat;
+		@include bg-cover();
+	}
+	.bin-img-append{
+		background: url('../images/product-03.png') no-repeat;
+		@include bg-cover();
+	}
+	&:hover{
+		transform: translateY(-10px);
+		.bin-title{
+			color: $primary-dark;
+		}
+		.bin-cover{
+			background-color: rgba($primary, .8);
+		}
+	}
+}

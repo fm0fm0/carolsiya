@@ -1,0 +1,54 @@
+@mixin bannerfixed ($img-url, $banner-height){
+	background: $img-url no-repeat;
+	height: $banner-height;
+	background-attachment: fixed;
+  	@include bg-cover();
+}
+@mixin brand-logo ($logo-url,$logo-width,$logo-height){
+	background: $logo-url no-repeat;
+	width: $logo-width;
+	height: $logo-height;
+}
+
+.bannerfixed{
+	position: relative;
+	&::after{
+		position: absolute;
+		bottom: -15px;
+		left: 50%;
+		transform: translateX(-50%) rotate(45deg);
+		width: 30px;
+		height: 30px;
+		background: $secondary;
+		font-family: "Font Awesome 5 Free";
+		// font-weight: 900;
+		content: "\f7b1";
+		color: $primary;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+//brand1
+.bannerfixed-1st{
+	@include bannerfixed (url(../images/brand-1.jpeg),400px);
+}
+.brand-logo-1st{
+	@include brand-logo (url(../images/ZALATO.png),200px,200px);
+}
+
+//brand2
+.bannerfixed-2nd{
+	@include bannerfixed (url(../images/brand-2.jpeg),400px);
+}
+.brand-logo-2nd{
+	@include brand-logo (url(../images/REGALAN.png),200px,200px);
+	opacity: .8;
+}
+//brand3
+.bannerfixed-3rd{
+	@include bannerfixed (url(../images/brand-3.jpeg),400px);
+}
+.brand-logo-3rd{
+	@include brand-logo (url(../images/FINELA.png),200px,200px);
+}

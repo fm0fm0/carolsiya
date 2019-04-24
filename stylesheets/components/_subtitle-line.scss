@@ -1,0 +1,36 @@
+//index title left&right line
+.subtitle-line{
+	position: relative;
+	&:before,&:after{
+		content:"";
+		position: absolute;
+		top: 50%;
+		background: $secondary-dark;
+		width: 13%;
+		height: 1px;
+	}
+	&:before{
+		left: 25%;
+		@include media-breakpoint-down (md){
+			left: 20%;
+		}
+		@include media-breakpoint-down (sm){
+			left: 15%;
+		}
+		@include media-breakpoint-down (xs){
+			left: 5%;
+		}
+	}
+	&:after{
+		right: 25%;
+		@include media-breakpoint-down (md){
+			right: 20%;
+		}
+		@include media-breakpoint-down (sm){
+			right: 15%;
+		}
+		@include media-breakpoint-down (xs){
+			right: 5%;
+		}
+	}
+}

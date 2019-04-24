@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,700');
+// helpers
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//base
+@import "base/wrapper";
+
+// components
+@import "helpers/mixin2";
+@import "components/bin-group";
+@import "components/search-box";
+@import "components/main-point";                //product page 商品說明欄
+@import "components/bg-rotate";
+@import "components/bg-double";
+@import "components/bannerfixed";               //brand page banner
+@import "components/or-line";                   //horizontal line behind text
+@import "components/subtitle-line";             //index page title left&right line
+@import "components/bg-decorative-border";      //斜角裝飾線框
+@import "components/heart-icon";                //互動元件
+@import "components/breath";                    //animation
+@import "components/link-hover";                //自訂連結文字效果
+
+
+
+// layout
+
+// vendors
+@import "vendors/fontawsome";
+@import "vendors/animate.min";

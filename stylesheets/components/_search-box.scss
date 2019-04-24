@@ -1,0 +1,20 @@
+.search-box{
+	width: 190px;
+	position: relative;
+	margin-right: 16px;
+	.search-input{
+		position: absolute;
+		top: -9px;
+		left: 0;
+		z-index: 0;
+		padding-right: 30px;
+		width: 190px;
+	}
+	.search-btn{
+		float: right;
+		position: absolute;
+		top: -9px;
+		right: -10px;
+		z-index: 1;
+	}
+}

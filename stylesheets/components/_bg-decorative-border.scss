@@ -1,0 +1,13 @@
+.bg-decorative-border{
+	background: url(../images/decorative_border_xl.svg) no-repeat;
+	background-position: center center;
+	@include media-breakpoint-down(md){
+		background: url(../images/decorative_border_lg.svg) no-repeat;
+		background-position: center center;		
+	}
+	@include media-breakpoint-down(sm){
+		background: url(../images/decorative_border_sm.svg) no-repeat;
+		background-position: center center;
+
+	}
+}

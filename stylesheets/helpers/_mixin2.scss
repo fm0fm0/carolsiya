@@ -1,0 +1,13 @@
+@mixin bg-cover {
+	background-size: cover;
+	background-position: center center;
+}
+@mixin shadow {
+	box-shadow: 1px 1px 1px #ddd;
+}
+.bg-cover{
+	@include bg-cover();
+}
+.shadow{
+	@include shadow();
+}
