@@ -6,8 +6,8 @@
 	animation-iteration-count: infinite;
 	animation-delay: 1s;
 	@keyframes breath {
-		from { opacity: 0.1; }
+		from { opacity: 0.2; }
     	50%  { opacity:   1; }
-    	to   { opacity: 0.1; }  
+    	to   { opacity: 0.2; }  
 	}
 }

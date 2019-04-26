@@ -44,12 +44,7 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
-$pink1:   #fbebea;
-$pink2:   #f2b8b6;
-$gray1:   #ceccca;
-$gray2:   #575757;
-$fb:      #4260a0;
-$line:    #00c300;
+
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -68,30 +63,19 @@ $colors: map-merge(
     "white":      $white,
     "gray":       $gray-600,
     "gray-dark":  $gray-800,
-    "pink1":      $pink1, //自訂
-    "pink2":      $pink2, //自訂
-    "gray1":      $gray1, //自訂
-    "gray2":      $gray2, //自訂
-    "fb":         $fb, //自訂
-    "line":       $line,  //自訂
   ),
   $colors
 );
 
 $primary:       #f8d9d7;  //$blue !default;
-$secondary:     #adadad;  //$gray-600 !default;
+$secondary:     #a0a0a0;  //$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
-$fb:            $fb;
-$line:          $line;
-$primary-light:   $pink1; //自訂
-$primary-dark:    $pink2; //自訂
-$secondary-light:  $gray1; //自訂
-$secondary-dark:   $gray2; //自訂
+
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -105,13 +89,7 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
-    "primary-light":  $primary-light, //自訂
-    "primary-dark":   $primary-dark, //自訂
-    "secondary-light": $secondary-light, //自訂
-    "secondary-dark":  $secondary-dark, //自訂
-    "fb":             $fb,            
-    "line":           $line,
-    "white":          $white
+    "white":      $white //自訂
   ),
   $theme-colors
 );
@@ -192,7 +170,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $secondary-dark;//$gray-900 !default;
+$body-color:                $secondary;//$gray-900 !default;
 
 
 // Links

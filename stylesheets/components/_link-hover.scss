@@ -1,7 +1,20 @@
-//自訂連結文字效果
+//連結文字效果
 .link-hover{
 	transition: .6s ease;
 	&:hover{
 		color: $primary-dark;
 	}
+}
+
+//連結放大效果
+.scale-hover{
+    transition: .6 ease;
+	&:hover{
+		transform: scale(1.1);
+		.scale-hover-text{
+			color: $primary-dark;
+		}
+	}
+    
+    
 }
