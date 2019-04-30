@@ -11998,6 +11998,10 @@ a.text-white:hover, a.text-white:focus {
   background: #ceccca !important;
 }
 
+.bg-secondary-lighter {
+  background: #f5f5f5 !important;
+}
+
 .bg-secondary-dark {
   background: #575757 !important;
 }
@@ -12102,6 +12106,16 @@ a.text-white:hover, a.text-white:focus {
 .btn-primary-dark:hover {
   color: #fff;
   background: #f07773;
+}
+
+.btn-primary-darker {
+  color: #fff;
+  background: #ee6667;
+}
+
+.btn-primary-darker:hover {
+  color: #fff;
+  background: #e93839;
 }
 
 .wrapper {
@@ -12591,27 +12605,216 @@ a.text-white:hover, a.text-white:focus {
   }
 }
 
-.link-hover {
+.text-hover {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.text-hover:hover {
+  color: #f5a4a1 !important;
+}
+
+.scale-hover {
+  -webkit-transition: all .6 ease;
+  transition: all .6 ease;
+}
+
+.scale-hover:hover, .scale-hover:active {
+  outline: 3px solid #f8d9d7;
+}
+
+.scale-hover:hover .scale-hover-text, .scale-hover:active .scale-hover-text {
+  color: #f5a4a1;
+}
+
+.float-top-hover {
+  -webkit-transition: all .6 ease;
+  transition: all .6 ease;
+}
+
+.float-top-hover:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.stepbar {
+  width: 500px;
+  height: 50px;
+}
+
+.stepbar .step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5a4a1;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.stepbar .step:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 312.5%;
+  height: 3px;
+  background: #f5a4a1;
+  margin: auto;
+  z-index: -1;
+}
+
+.stepbar .step .step-text {
+  display: block;
+  color: #f5a4a1;
+  width: 100px;
+  position: absolute;
+  left: -70%;
+}
+
+.stepbar .step.active {
+  background: #ee6667;
+}
+
+.stepbar .step.active span {
+  color: #ee6667;
+}
+
+.stepbar .step.active ~ li {
+  background: #ceccca;
+}
+
+.stepbar .step.active ~ li span {
+  color: #ceccca;
+}
+
+.stepbar .step.active ~ li:before {
+  background: #ceccca;
+}
+
+.close-btn {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .2;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  opacity: .8;
+}
+
+.gotop {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #575757;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 999;
   -webkit-transition: .6s ease;
   transition: .6s ease;
 }
 
-.link-hover:hover {
-  color: #f5a4a1;
+.gotop:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #575757;
+  border-left: 1px solid #575757;
+  border-top-left-radius: 30%;
+  -webkit-transform: translate(-50%, -30%) rotate(45deg);
+          transform: translate(-50%, -30%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
-.scale-hover {
-  -webkit-transition: .6 ease;
-  transition: .6 ease;
+.gotop:hover {
+  background: #f8d9d7;
+  border: 1px solid #a0a0a0;
 }
 
-.scale-hover:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.gotop:hover::before {
+  border-top: 1px solid #a0a0a0;
+  border-left: 1px solid #a0a0a0;
 }
 
-.scale-hover:hover .scale-hover-text {
-  color: #f5a4a1;
+.checkout-btn {
+  width: 150px;
+}
+
+@media (max-width: 767.98px) {
+  .checkout-btn {
+    width: 50%;
+  }
+}
+
+.checkout-btn-w100 {
+  width: 150px;
+}
+
+@media (max-width: 767.98px) {
+  .checkout-btn-w100 {
+    width: 100%;
+  }
+}
+
+.checkout-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .close-btn {
+    top: 0;
+    font-size: 40px;
+  }
+}
+
+.checkout-title {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .checkout-title {
+    font-size: 16px;
+  }
+}
+
+.checkout-text {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .checkout-text {
+    font-size: 16px;
+  }
+}
+
+.checkout-price {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .checkout-price {
+    font-size: 16px;
+  }
 }
 
 /*!

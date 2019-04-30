@@ -1,20 +1,26 @@
 //連結文字效果
-.link-hover{
-	transition: .6s ease;
+.text-hover{
+	transition: all .6s ease;
 	&:hover{
-		color: $primary-dark;
+		color: $primary-dark !important;
 	}
 }
 
-//連結放大效果
+//連結外框效果
 .scale-hover{
-    transition: .6 ease;
-	&:hover{
-		transform: scale(1.1);
+	transition: all .6 ease;
+	&:hover,&:active{
+		outline: 3px solid $primary;
 		.scale-hover-text{
 			color: $primary-dark;
 		}
+	}  
+}
+
+//
+.float-top-hover{
+	transition: all .6 ease;
+	&:hover{
+		transform: translateY(-10px);
 	}
-    
-    
 }

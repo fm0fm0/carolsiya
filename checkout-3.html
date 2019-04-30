@@ -74,43 +74,113 @@
             </nav>
         </div>
     </header><!-- /header -->
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="bannerfixed bannerfixed-1st d-flex justify-content-center align-items-center">
-                <h1 class="text-hide brand-logo-1st">ZALATO</h1>
-            </div>
-        </div>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">brand</li>
-                    <li class="breadcrumb-item active" aria-current="page">ZALATO</li>
-                </ol>
-            </nav>
-        </div>
-        <!-- section1 -->
-        <section class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto text-secondary-dark">
-                    <p>每天戴上首飾的那刻，都是一種怦然心動，想要一直佩戴在身上的個人日常風格首飾，陪妳度過，
-                        展現生活中的每個感受，因為我們認為飾品是一種生活態度，就像是衣服一樣，是我們每天必備的穿著，ZALATO妝點的不是配件，而是每個女孩的日常。
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, aliquid assumenda voluptate
-                        architecto unde, aspernatur odio modi nisi illo commodi laboriosam nobis quia! Mollitia impedit,
-                        laudantium debitis explicabo soluta ipsa sunt exercitationem totam magnam nobis blanditiis, odio
-                        ratione maxime rem ex quod porro magni distinctio libero placeat accusantium dicta sequi
-                        numquam? A consequuntur impedit distinctio, tenetur dignissimos nostrum ad voluptates, accusamus
-                        magni eos omnis, aliquam vitae expedita! Minima vero libero illo dolor quae dignissimos!
-                        Provident voluptatum, eos ex fuga quas inventore ipsam quam facilis sit accusamus accusantium
-                        vero, quia laudantium a ut aliquam pariatur dolorum voluptates ullam beatae. Voluptatibus, quos?
-                    </p>
-                </div>
-            </div>
 
+    <section class="container">
+        <h1 class="h5 mt-1 d-md-none">填寫資料</h1>
+        <div class="d-none d-md-block">
+            <ul class="stepbar d-flex list-unstyled justify-content-between mx-auto my-4">
+                <li class="step">1<span class="step-text">確認購物車</span></li>
+                <li class="step">2<span class="step-text">配送與付款</span></li>
+                <li class="step active">3<span class="step-text">填寫資料</span></li>
+                <li class="step">4<span class="step-text">訂購完成</span></li>
+            </ul>
+        </div>
+    </section>
+    <!-- checkout -->
+    <section class="container">
+        <div class="">
+            <p class="text-center">本次消費總計 <strong class="text-danger h5 font-weight-bold">NT$1380</strong></p>
+            <p class="text-center">
+                共<strong class="text-danger font-weight-bold mx-1">2</strong>件商品 
+                <a href="#" class="checkout-list-btn" id="checkout-list-btn"><i class="fas fa-caret-down mx-1 fa-2x"></i></a>
+            </P>
+            <div class="checkout-list m-auto" id="checkout-list" style="display: none; max-width: 700px;">
+                <section class="row border no-gutters">
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center p-1">
+                        <img src="images/product-02.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-8 col-md-10 d-flex justify-content-start align-items-center">
+                        <div class="row no-gutters w-100">
+                            <div class="col-md-8">
+                                <h2 class="text-secondary-dark mt-1 my-md-1 checkout-title">璀璨女主角。針式耳環+多環戒</h2>
+                                <span class="d-block text-secondary-dark mb-1 checkout-text">選項：金色</span>
+                            </div>
+                            <div class="col-md-2 m-auto">
+                                <span>1</span>
+                            </div>
+                            <div class="col-md-2 m-auto py-md-1">
+                                <span class="text-danger font-weight-bold checkout-price">$690</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row border no-gutters checkout-content">
+                    <div class="col-4 col-md-2 d-flex justify-content-center align-items-center p-1">
+                        <img src="images/product-05.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-8 col-md-10 d-flex justify-content-start align-items-center">
+                        <div class="row no-gutters w-100">
+                            <div class="col-md-8">
+                                <h2 class="text-secondary-dark mt-1 my-md-1 checkout-title">幻象之境。針式耳環+單環戒</h2>
+                                <span class="d-block text-secondary-dark mb-1 checkout-text">選項：淺綠</span>
+                            </div>
+                            <div class="col-md-2 m-auto">
+                                <span>1</span>
+                            </div>
+                            <div class="col-md-2 m-auto py-md-1">
+                                <span class="text-danger font-weight-bold checkout-price">$690</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6 mx-auto border p-2">
+                <form>
+                    <div class="form-group">
+                        <label for="checkoutName">姓名</label>
+                        <input type="text" class="form-control" id="checkoutName" aria-describedby="emailHelp"
+                            placeholder="" value="王小明">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutNumber">手機號碼</label>
+                        <input type="tel" class="form-control" id="checkoutNumber" placeholder="請輸入有效地手機號碼"
+                            value="0912345678">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutAddress">取貨地址</label>
+                        <select class="form-control" id="checkoutAddress">
+                            <option>成功門市-台北市大安區成功路168號</option>
+                            <option>成功門市-台北市大安區成功路168號</option>
+                            <option>成功門市-台北市大安區成功路168號</option>
+                            <option>成功門市-台北市大安區成功路168號</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="invoice">發票類型</label>
+                        <select class="form-control" id="invoice">
+                            <option>個人 二聯發票</option>
+                            <option>公司 統一編號</option>
+                            <option>捐贈發票</option>
+                            <option>個人載具</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 按鈕 -->
+        <section class="row mt-md-1 no-gutters">
+            <div class="col-md-6 d-flex justify-content-between mx-auto">
+                <a href="checkout-2.html" class="btn btn-primary checkout-btn">＜ 重選付款方式</a>
+                <a href="checkout-4.html" class="btn btn-primary-darker checkout-btn">送出</a>
+            </div>
         </section>
+    </section>
 
-    </div>
+
+
+
     <footer class="bg-secondary pt-4 pb-1 mt-9">
         <div class="container">
             <div class="row text-white ml-1 ">
@@ -145,10 +215,6 @@
 
         </div>
     </footer>
-
-    <a href="" class="gotop" id="gotop" title="回頂部"></a>
-
-
     <!-- login modal -->
     <div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog"
         aria-labelledby="myLargeModalLabel" aria-hidden="true">

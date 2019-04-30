@@ -1,0 +1,32 @@
+.gotop{
+    width: 45px;
+    height: 45px;
+    border:1px solid $secondary-dark;
+    border-radius:50%;
+    position: fixed;
+    bottom: 40px;
+    right:50px;
+    z-index: 999;
+    transition: .6s ease;
+    &:before{
+        content:"";
+        width: 15px;
+        height: 15px;
+        border-top:1px solid $secondary-dark;
+        border-left: 1px solid $secondary-dark;
+        border-top-left-radius:30%;
+        transform:translate(-50%,-30%) rotate(45deg);
+        position: absolute;
+        top:50%;
+        left: 50%;
+    }
+    &:hover{
+        background: $primary;
+        border:1px solid $secondary;
+        &::before{
+            border-top:1px solid $secondary;
+            border-left: 1px solid $secondary;
+        }
+}
+}
+  

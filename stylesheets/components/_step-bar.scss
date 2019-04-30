@@ -1,0 +1,49 @@
+//購物步驟
+.stepbar{
+  width: 500px;
+  height: 50px;
+  .step{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $primary-dark;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    &:not(:first-child)::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      width: 312.5%;
+      height: 3px;
+      background: $primary-dark;
+      margin: auto;
+      z-index: -1;
+    }
+    .step-text{
+      display: block;
+      color: $primary-dark;
+      width: 100px;
+      position: absolute;
+      left: -70%;
+    }
+    &.active{
+      background: $primary-darker;
+      span{
+        color: $primary-darker;
+      }
+    }
+    &.active ~ li{
+      background: $secondary-light;
+      span{
+        color: $secondary-light;
+      }
+    }
+    &.active ~ li:before{
+      background: $secondary-light;
+    }
+  }
+}

@@ -1,7 +1,9 @@
 //extra color
 $primary-light:    #fbebea;
 $primary-dark:     #f5a4a1;
+$primary-darker:   #ee6667;
 $secondary-light:  #ceccca;
+$secondary-lighter:#f5f5f5;
 $secondary-dark:   #575757;
 $fb:               #4260a0;
 $line:             #00c300;
@@ -16,6 +18,9 @@ $ig:               #cd3d88;
 }
 .bg-secondary-light{
     background: $secondary-light !important;
+}
+.bg-secondary-lighter{
+    background: $secondary-lighter !important;
 }
 .bg-secondary-dark{
     background: $secondary-dark !important;
@@ -102,5 +107,13 @@ $ig:               #cd3d88;
     &:hover{
         color: #fff;
         background: darken($primary-dark, 10%);
+    }
+}
+.btn-primary-darker{
+    color: #fff;
+    background: $primary-darker;
+    &:hover{
+        color: #fff;
+        background: darken($primary-darker, 10%);
     }
 }

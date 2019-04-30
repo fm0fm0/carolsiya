@@ -1,0 +1,46 @@
+
+
+.checkout-btn{
+    width: 150px;
+    @include media-breakpoint-down(sm){
+        width: 50%;
+    }
+}
+.checkout-btn-w100{
+    width: 150px;
+    @include media-breakpoint-down(sm){
+        width: 100%;
+    }
+}
+
+.checkout-content{
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    @include media-breakpoint-up(md){
+        top: 0;
+        font-size: 40px;
+    }
+}
+.checkout-title{
+    font-size: 12px;
+    @include media-breakpoint-up(md){
+        font-size: 16px;        
+    }
+}
+.checkout-text{
+    font-size: 12px;
+    @include media-breakpoint-up(md){
+        font-size: 16px;        
+    }
+}
+.checkout-price{
+    font-size: 14px;
+    @include media-breakpoint-up(md){
+        font-size: 16px;        
+    }
+}

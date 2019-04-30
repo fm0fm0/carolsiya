@@ -23,10 +23,14 @@
 @import "components/heart-icon";                //互動元件
 @import "components/breath";                    //animation
 @import "components/link-hover";                //自訂連結文字效果
+@import "components/step-bar";                  //購物步驟
+@import "components/close-button";              //關閉按鈕
+@import "components/gotop";                     //gotop按鈕
 
 
 
 // layout
+@import "layout/checkout";
 
 // vendors
 @import "vendors/fontawsome";

@@ -74,43 +74,106 @@
             </nav>
         </div>
     </header><!-- /header -->
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="bannerfixed bannerfixed-1st d-flex justify-content-center align-items-center">
-                <h1 class="text-hide brand-logo-1st">ZALATO</h1>
+
+    <section class="container">
+        <h1 class="h5 mt-1 d-md-none">購物車</h1>
+        <div class="d-none d-md-block">
+            <ul class="stepbar d-flex list-unstyled justify-content-between mx-auto my-4">
+                <li class="step active">1<span class="step-text">確認購物車</span></li>
+                <li class="step">2<span class="step-text">配送與付款</span></li>
+                <li class="step">3<span class="step-text">填寫資料</span></li>
+                <li class="step">4<span class="step-text">訂購完成</span></li>
+            </ul>
+        </div>
+    </section>
+    <!-- checkout -->
+    <section class="container">
+        <section class="row border no-gutters checkout-content">
+            <div class="col-4 col-md-2 d-flex justify-content-center align-items-center p-1">
+                <img src="images/product-02.png" alt="" class="img-fluid">
             </div>
-        </div>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">brand</li>
-                    <li class="breadcrumb-item active" aria-current="page">ZALATO</li>
-                </ol>
-            </nav>
-        </div>
-        <!-- section1 -->
-        <section class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto text-secondary-dark">
-                    <p>每天戴上首飾的那刻，都是一種怦然心動，想要一直佩戴在身上的個人日常風格首飾，陪妳度過，
-                        展現生活中的每個感受，因為我們認為飾品是一種生活態度，就像是衣服一樣，是我們每天必備的穿著，ZALATO妝點的不是配件，而是每個女孩的日常。
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, aliquid assumenda voluptate
-                        architecto unde, aspernatur odio modi nisi illo commodi laboriosam nobis quia! Mollitia impedit,
-                        laudantium debitis explicabo soluta ipsa sunt exercitationem totam magnam nobis blanditiis, odio
-                        ratione maxime rem ex quod porro magni distinctio libero placeat accusantium dicta sequi
-                        numquam? A consequuntur impedit distinctio, tenetur dignissimos nostrum ad voluptates, accusamus
-                        magni eos omnis, aliquam vitae expedita! Minima vero libero illo dolor quae dignissimos!
-                        Provident voluptatum, eos ex fuga quas inventore ipsam quam facilis sit accusamus accusantium
-                        vero, quia laudantium a ut aliquam pariatur dolorum voluptates ullam beatae. Voluptatibus, quos?
-                    </p>
+            <div class="col-8 col-md-10 d-flex justify-content-start align-items-center">
+                <div class="row no-gutters w-100">
+                    <div class="col-md-8">
+                        <h2 class="text-secondary-dark mt-1 my-md-1 checkout-title">璀璨女主角。針式耳環+多環戒</h2>
+                        <span class="d-block text-secondary-dark mb-1 checkout-text">選項：金色</span>
+                    </div>
+                    <div class="col-md-2 m-auto">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend" id="button-addon3">
+                                <button class="btn btn-outline-secondary" type="button">-</button>
+                                <button class="btn btn-outline-secondary" type="button">1</button>
+                                <button class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-auto py-md-1">
+                        <span class="text-danger font-weight-bold checkout-price">$690</span>
+                    </div>
                 </div>
             </div>
-
+            <a href="#" class="close-btn" id="close-btn">&times;</a>
         </section>
+        <section class="row border no-gutters checkout-content">
+            <div class="col-4 col-md-2 d-flex justify-content-center align-items-center p-1">
+                <img src="images/product-05.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-8 col-md-10 d-flex justify-content-start align-items-center">
+                <div class="row no-gutters w-100">
+                    <div class="col-md-8">
+                        <h2 class="text-secondary-dark mt-1 my-md-1 checkout-title">幻象之境。針式耳環+單環戒</h2>
+                        <span class="d-block text-secondary-dark mb-1 checkout-text">選項：淺綠</span>
+                    </div>
+                    <div class="col-md-2 m-auto">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend" id="button-addon3">
+                                <button class="btn btn-outline-secondary" type="button">-</button>
+                                <button class="btn btn-outline-secondary" type="button">1</button>
+                                <button class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 m-auto py-md-1">
+                        <span class="text-danger font-weight-bold checkout-price">$690</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-btn" id="close-btn">&times;</a>
+        </section>
+        <!-- 小計 -->
+        <section class="bg-secondary-lighter p-2">
+            <div class="row text-secondary-dark">
+                <div class="col-md-8 text-md-right mb-1">
+                    <span>共<strong class="text-danger mx-1">2</strong>件</span>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between mb-1">
+                            <span class="d-block">商品金額</span>
+                            <span class="d-block">$1380</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between mb-1">
+                            <span class="d-block">運費小計</span>
+                            <span class="d-block">尚未選擇</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between border-top pt-1">
+                            <span class="font-weight-bold d-block">總計</span>
+                            <span class="text-danger font-weight-bold h5 d-block"><strong>$1380</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 按鈕 -->
+        <section class="d-flex justify-content-between mt-md-1">
+            <a href="index.html" class="btn btn-primary checkout-btn">＜ 繼續購物</a>
+            <a href="checkout-2.html" class="btn btn-primary-darker checkout-btn">下一步 ＞</a>
+        </section>
+    </section>
 
-    </div>
+
+
+
     <footer class="bg-secondary pt-4 pb-1 mt-9">
         <div class="container">
             <div class="row text-white ml-1 ">
@@ -145,10 +208,6 @@
 
         </div>
     </footer>
-
-    <a href="" class="gotop" id="gotop" title="回頂部"></a>
-
-
     <!-- login modal -->
     <div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog"
         aria-labelledby="myLargeModalLabel" aria-hidden="true">
