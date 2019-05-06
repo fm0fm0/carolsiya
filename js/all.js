@@ -21,15 +21,15 @@ $(document).ready(function () {
     new WOW().init();
 
     //購物車商品關閉按鈕
-    $("#close-btn").click(function(){
+    $(".close-btn").click(function(){
         event.preventDefault();
         $(this).parent().hide();
     });
 
     //開關消費明細
-    $("#checkout-list-btn").click(function(){
+    $(".checkout-list-btn").click(function(){
         event.preventDefault();
-        $("#checkout-list").toggle();
+        $(".checkout-list").slideToggle();
     });
 
     //gotop回首頁

@@ -12614,11 +12614,6 @@ a.text-white:hover, a.text-white:focus {
   color: #f5a4a1 !important;
 }
 
-.scale-hover {
-  -webkit-transition: all .6 ease;
-  transition: all .6 ease;
-}
-
 .scale-hover:hover, .scale-hover:active {
   outline: 3px solid #f8d9d7;
 }
@@ -12628,8 +12623,8 @@ a.text-white:hover, a.text-white:focus {
 }
 
 .float-top-hover {
-  -webkit-transition: all .6 ease;
-  transition: all .6 ease;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .float-top-hover:hover {
@@ -12747,6 +12742,10 @@ a.text-white:hover, a.text-white:focus {
 .gotop:hover::before {
   border-top: 1px solid #a0a0a0;
   border-left: 1px solid #a0a0a0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .checkout-btn {

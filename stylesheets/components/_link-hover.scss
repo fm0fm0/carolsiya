@@ -8,7 +8,7 @@
 
 //連結外框效果
 .scale-hover{
-	transition: all .6 ease;
+
 	&:hover,&:active{
 		outline: 3px solid $primary;
 		.scale-hover-text{
@@ -17,9 +17,9 @@
 	}  
 }
 
-//
+//上飄效果
 .float-top-hover{
-	transition: all .6 ease;
+	transition: all .6s ease;
 	&:hover{
 		transform: translateY(-10px);
 	}
